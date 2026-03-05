@@ -13,7 +13,7 @@ def status():
 
 @app.route("/usuarios")
 def usuarios():
-    return jsonify(["Ana", "Carlos", "Maria"])
+    return jsonify(["Ana", "Carlos", "Maria", "Thiago"])
 
 if __name__ == '__main__':
     app.run(debug=True)
