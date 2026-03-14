@@ -13,7 +13,7 @@ def status():
 
 @app.route("/sobre")
 def sobre():
-    return "Projeto desenvolvido na disciplina de Integração e Entrega Contínua"
+    return "Sistema desenvolvido em Flask para estudo de CI/CD"
 
 @app.route("/usuarios")
 def usuarios():
