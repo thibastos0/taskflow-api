@@ -19,6 +19,10 @@ def sobre():
 def livros():
     return "Lista de livros cadastrados"
 
+@app.route("/autores")
+def autores():
+    return "lista de autores cadastrados"
+
 @app.route("/usuarios")
 def usuarios():
     return jsonify(["Ana", "Carlos", "Maria", "Thiago"])
