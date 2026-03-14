@@ -23,6 +23,10 @@ def livros():
 def autores():
     return "lista de autores cadastrados"
 
+@app.route("/contato")
+def contato():
+    return "Página de contato do sistema"
+
 @app.route("/usuarios")
 def usuarios():
     return jsonify(["Ana", "Carlos", "Maria", "Thiago"])
