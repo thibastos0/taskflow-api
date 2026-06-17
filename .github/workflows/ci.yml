@@ -1,10 +1,22 @@
-name: Teste CI Inicial
 
-on: push
+name: CI - API Flask - Testes
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-    teste:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - run: echo "CI funcionando corretamente"
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - run: pytest
