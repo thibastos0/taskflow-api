@@ -24,8 +24,3 @@ jobs:
 
       - name: Verificar sintaxe
         run: python -m py_compile src/app.py
-    
-      - name: Falha 3 - Arquivo inexistente
-        run: python error.py 
-
-     
