@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Sistema de Gestão de Biblioteca Online."
+    return "Sistema de Gestão de Biblioteca Online - CI/CD."
 
 @app.route("/status")
 def status():
