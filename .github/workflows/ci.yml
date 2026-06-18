@@ -1,5 +1,4 @@
-
-name: CI - API Flask - Testes
+name: CI - API Flask
 
 on:
   push:
