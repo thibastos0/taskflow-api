@@ -36,6 +36,10 @@ def cadastro_livro():
 def usuarios():
     return jsonify(["Ana", "Carlos", "Maria", "Thiago"])
 
+@app.route("/soma/<int:a>/<int:b>")
+def soma(a, b):
+    return jsonify({"resultado": a + b})
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
